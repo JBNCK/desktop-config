@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blank HTML Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .button {
+      border-radius: 10px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    .button:hover {
+      cursor: pointer;
+    }
+    /* Button specific background images */
+    .button1 {
+      background-image: url('official_repos.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+    }
+    .button2 {
+      background-image: url('aur.png');
+      background-size: cover;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    /* Media queries for different screen sizes */
+    @media screen and (min-width: 351px) and (max-width: 500px) {
+      .button1, .button2 {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      .button1, .button2 {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://archlinux.org/packages"><div class="button button1">Arch repos</div></a>
+  <a href="https://aur.archlinux.org/packages"><div class="button button2"></div></a>
+  <div style="display: float; top: 0; right: 0; position: fixed; color: white; background-color: #333; padding: 15px;"><a style="color: white; 4px; margin-left: 4px;" href="https://archlinux.org"> Home </a><a style="color: white; margin-right: 4px; margin-left: 4px;" href="https://wiki.archlinux.org/"> Wiki </a></div>
+</body>
+</html>
+
