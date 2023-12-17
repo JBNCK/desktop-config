@@ -4,7 +4,7 @@ Type=Application
 Terminal=false
 Name=Packages
 Comment=Access the package catalog
-Exec=xdg-open /usr/share/appstore/appstore.html
+Exec=xdg-open https://archlinux.org/Packages
 Icon=/usr/share/appstore/icons/package_store.png
 Categories=Network;System;Utilities;
 
